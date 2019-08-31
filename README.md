@@ -1,4 +1,4 @@
-Test Task (Loan Calculator)
+# Test Task (Loan Calculator)
 
 ## Stack used:
 
