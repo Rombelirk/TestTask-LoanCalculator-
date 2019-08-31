@@ -2,7 +2,7 @@
 
 ## Stack used:
 
-React, Redux, Styled Components, Typescript, Jest, Enzyme
+React, Redux, Styled Components, Typescript, Jest, Enzyme, Matherial UI
 
 ## Available Scripts
 
