@@ -6,14 +6,6 @@ export const Container = styled.div`
     flex-direction: column;
 `
 
-export const Title = styled.div`
-    display: flex;
-    align-items: flex-end;
-    font-size: 14px;
-    font-weight: bold;
-    margin-right: 6px;
-    padding-bottom: 4px;
-`
 export const ErrorText = styled.div`
     display: flex;
     font-size: 11px;

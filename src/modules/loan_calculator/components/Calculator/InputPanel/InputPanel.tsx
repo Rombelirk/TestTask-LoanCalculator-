@@ -1,5 +1,5 @@
 import React, { useState, FC, ChangeEventHandler } from "react";
-import { Input, Button } from "@material-ui/core";
+import { Button } from "@material-ui/core";
 import NumberInput from "./NumberInput/NumberInput";
 import { Container } from "./InputPanel.style";
 
@@ -33,7 +33,7 @@ const InputPanel: FC<Props> = ({
     const validateDuration = (duration: number | string) => {
         if (typeof duration === "number") {
             if (duration < 1 || duration > 5) {
-                return "Duration should be in range 1 and 5";
+                return "Should be in range of 1 and 5";
             }
             return "";
         }
@@ -43,7 +43,7 @@ const InputPanel: FC<Props> = ({
     const validateAmount = (amount: number | string) => {
         if (typeof amount === "number") {
             if (amount < 10000 || amount > 100000) {
-                return "Amount should be in range 10000 and 100000";
+                return "Should be in range of 10,000 and 100,000";
             }
             return "";
         }
@@ -63,10 +63,12 @@ const InputPanel: FC<Props> = ({
     return (
         <Container>
             <NumberInput
+                prefix={"€"}
                 error={errorAmount}
                 value={amountValue}
                 onChange={onInputChange("amount")}
                 title="Amount"
+                
             />
             <NumberInput
                 error={errorDuration}
